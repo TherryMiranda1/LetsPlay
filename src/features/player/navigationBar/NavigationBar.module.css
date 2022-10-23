@@ -1,0 +1,71 @@
+.navigationBar {
+  position: absolute;
+  z-index: 10;
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  width: 100%;
+  height: 3rem;
+  backdrop-filter: blur(4px);
+}
+
+.navigationBar_desktop {
+  display: none;
+  position: absolute;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  .navigationBar_desktop {
+    display: flex;
+  }
+}
+
+.navigationBar_desktop_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigationBar_mobile {
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-image: linear-gradient(to top right, black, transparent);
+  width: 66.666667%;
+  height: 30px;
+  backdrop-filter: blur(24px);
+}
+@media (min-width: 768px) {
+  .navigationBar_mobile {
+    display: none;
+  }
+}
+
+.navigationBar_mobile_items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigationBar_item {
+  display: flex;
+  margin: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navigationBar_item_activeClass {
+    display: flex;
+    margin: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    gap: 1.25rem;
+  }
+
+.navigationBar_item:hover {
+  color: #fffa9d;
+}
