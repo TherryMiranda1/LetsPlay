@@ -2,7 +2,7 @@ import { authorizationRequested, hasBeenAuthorized } from "./spotify.session.sli
 
 const CLIENT_ID = '64c533d441c343878345aaaf4e24dc7b';
 const CLIENT_SECRET = 'a5ed534ce5c7499fa0d6c7097e1ed2a7';
-const REDIRECT_URI = 'https://letsplay-eight.vercel.app/callback';
+const REDIRECT_URI = 'https://letsplay.therry.dev/callback';
 const SPOTIFY_URL = 'https://accounts.spotify.com'
 
 const scopes = [
